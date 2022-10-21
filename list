@@ -1,0 +1,16 @@
+<html>
+<h1>Fruits</h1>
+<title>List</title>
+<body>
+<UL type="disc">
+<b><li>Apple</li>
+<li>Orange</li>
+<li>Banana</li></b>
+</UL>
+<OL type="1" start="10">
+    <b><li>Apple</li>
+    <li>Orange</li>
+    <li>Banana</li></b>
+    </OL>
+</body>
+</html>
