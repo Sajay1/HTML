@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        function exam(form)
+        {
+            var i=0;
+            if(form.one[2].checked)
+             i=i+5;         
+            if(form.two[2].checked)
+             i=i+10;     
+             if(form.three[3].checked)
+             i=i+10; 
+             window.alert("THANK YOU for attending the exam.You scored"+i)
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="exam(this)">
+    <h1><center>Online Examination</center></h1>
+    <p>1.What is the color of sky</p>
+    <label>ORANGE</label>
+    <input type="radio" name="one" value="Orange"/>
+    <label>GREEN</label>
+    <input type="radio" name="one" value="Green"/>
+    <label>BLUE</label>
+    <input type="radio" name="one" value="Blue"/>
+    <label>YELLOW</label>
+    <input type="radio" name="one" value="Yellow"/><br>
+
+
+
+
+    <p>2.What is the full form of MP?</p>
+    <label>Micro program</label>
+    <input type="radio" name="two" value="Micro program"/>
+    <label>Multi programming</label>
+    <input type="radio" name="two" value="Multi programming"/>
+    <label>Micro processor</label>
+    <input type="radio" name="two" value="Micro processor"/><br>
+
+    <p>3.Father of our Nation</p>
+    <label>Jawaharlal Nehru</label>
+    <input type="radio" name="three" value="Jawaharlal Nehru"/>
+    <label>Lal Bahadur Shastri</label>
+    <input type="radio" name="three" value="Lal Bahadur Shastri"/>
+    <label>Bhagat Singh</label>
+    <input type="radio" name="three" value="Bhagat Singh"/>
+    <label>Mahatma Gandhi</label>
+    <input type="radio" name="three" value="Mahatma Gandhi"/><br>
+
+
+    <input type="submit" value="submit"/>
+    <input type="reset" value="reset"
+</form> 
+</body>
+</html>
