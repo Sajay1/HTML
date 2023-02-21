@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple</title>
-</head>
-<body>
-    <?php
-    echo "hello world";
-    ?>
-</body>
-</html>
+<?php
+$server_name="localhost";
+$username="root";
+$password="";
+$database="stud";
+$connection=mysqli_connect($server_name,$username,$password,$database);
+if($connection)
+{
+    echo "CONNECTED SUCCESSFULLY";
+}
+else
+{
+    die('NOT CONNECTED!!!');
+}
+$name=$_POST['name1'];
+$email=$_POST['name2'];
+$phone_number=$_POST['name3'];
+$address=$_POST['name4'];
+
+$sql = "INSERT INTO student_details(Name,Email,Phone_number,Address) VALUES('$name','$email','$phone_number','$address')";
+mysqli_query($connection,$sql);
+mysqli_close($connection);
